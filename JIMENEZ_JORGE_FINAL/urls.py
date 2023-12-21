@@ -30,7 +30,7 @@ urlpatterns = [
     path('formulario_instituciones/',views.cinstitucion),
 
     #ESTOS PATH SON DE LOS FUNCTION BASE VIEW
-    path('institucion/',views.Institucion_list),#este path lista todos los estudiantes
+    path('institucion/',views.Institucion_list),#este path lista todos los instituciones
     path('institucion_detalle/<int:id>',views.Institucion_detalle),#este es para ver individual
 
     #ESTOS PATH SON DE LOS CLASS BASED VIEW
