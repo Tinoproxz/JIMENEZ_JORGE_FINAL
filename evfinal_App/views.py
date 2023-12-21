@@ -36,12 +36,12 @@ def cinscritos(request):
     return render(request, 'formularios.html', data)
 
 def Jorgito(request):
-    emp = {
+    dato = {
         'RUT':'21.073.398-1',
         'Nombre': 'Jorge Jimenez',
         'Sección': 'IEI-171-N4',
     }
-    return JsonResponse(emp)
+    return JsonResponse(dato)
 
 
 #CLASS BASE VIEWS

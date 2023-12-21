@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
 
+    #DATOS DE AUTOR
     path('jorgito/',views.Jorgito),
 
     #FORMULARIOS

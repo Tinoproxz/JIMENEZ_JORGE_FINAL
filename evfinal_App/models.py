@@ -7,6 +7,10 @@ class Instituciones(models.Model):
     nombre = models.CharField(verbose_name="Nombre Institucion",max_length=80,validators=[validators.MinLengthValidator(1), validators.MaxLengthValidator(80)])
     direccion = models.CharField(max_length=50)
 
+    def __str__(self):
+        return str(self.id_insti)
+
+
 class Inscritos(models.Model):
     ESTADOS=[('RESERVADO', 'Reservado'),('COMPLETADA', 'Completada'),('ANULADA','Anulada'),('NO ASISTEN','No Asisten')]
     id = models.IntegerField(primary_key=True)
@@ -17,4 +21,6 @@ class Inscritos(models.Model):
     hora_inscri = models.TimeField(verbose_name="Hora Inscripcion", auto_now_add=True) 
     estado = models.CharField(max_length=15,choices=ESTADOS)
     observacion = models.CharField(max_length=250)
+
+
     
