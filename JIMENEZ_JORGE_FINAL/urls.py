@@ -33,9 +33,9 @@ urlpatterns = [
     path('institucion/',views.Institucion_list),#este path lista todos los estudiantes
     path('institucion_detalle/<int:id>',views.Institucion_detalle),#este es para ver individual
 
-    #ESTOS PATH SON DE LOS CLASS BASE VIEW
-    path('inscritos_class/',views.InscritosList_class.as_view()), # nose cual es la diferencia
-    path('inscritos_class_deta/<int:id>',views.Inscritos_detalle_class.as_view()), #NOSE CUAL ES LA DIFERENCIA
+    #ESTOS PATH SON DE LOS CLASS BASED VIEW
+    path('inscritos_class/',views.InscritosList_class.as_view()),
+    path('inscritos_class_deta/<int:id>',views.Inscritos_detalle_class.as_view()),
 ]
 
 
