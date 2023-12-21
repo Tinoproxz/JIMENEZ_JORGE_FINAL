@@ -8,7 +8,7 @@ class Instituciones(models.Model):
     direccion = models.CharField(max_length=50)
 
     def __str__(self):
-        return str(self.id_insti)
+        return str(self.nombre)
 
 
 class Inscritos(models.Model):
@@ -21,6 +21,3 @@ class Inscritos(models.Model):
     hora_inscri = models.TimeField(verbose_name="Hora Inscripcion", auto_now_add=True) 
     estado = models.CharField(max_length=15,choices=ESTADOS)
     observacion = models.CharField(max_length=250)
-
-
-    
