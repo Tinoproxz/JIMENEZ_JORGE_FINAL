@@ -38,6 +38,7 @@ def Jorgito(request):
         'RUT':'21.073.398-1',
         'Nombre': 'Jorge Jimenez',
         'Sección': 'IEI-171-N4',
+        'Equipo': 'DEPORTES TEMUCO'
     }
     return JsonResponse(dato)
 

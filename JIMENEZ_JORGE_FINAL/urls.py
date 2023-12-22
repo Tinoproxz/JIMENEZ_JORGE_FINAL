@@ -22,7 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
 
-    #DATOS DE AUTOR
+    #DATOS DEL MAS EXOTICO DE INACAP
     path('jorgito/',views.Jorgito),
 
     #FORMULARIOS
